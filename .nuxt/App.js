@@ -3,8 +3,6 @@ import NuxtLoading from './components/nuxt-loading.vue'
 
 import '..\\assets\\css\\main.css'
 
-import '..\\assets\\css\\normalize.css'
-
 import '..\\assets\\css\\animate.css'
 
 import '..\\assets\\css\\font-awesome.css'
@@ -12,7 +10,9 @@ import '..\\assets\\css\\font-awesome.css'
 
 let layouts = {
 
-  "_default": () => import('..\\layouts\\default.vue'  /* webpackChunkName: "layouts_default" */).then(m => m.default || m)
+  "_default": () => import('..\\layouts\\default.vue'  /* webpackChunkName: "layouts_default" */).then(m => m.default || m),
+
+  "_sign": () => import('..\\layouts\\sign.vue'  /* webpackChunkName: "layouts_sign" */).then(m => m.default || m)
 
 }
 
