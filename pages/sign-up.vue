@@ -51,7 +51,7 @@
             </div>
             <!--第三方的登录-->
             <div class="more-sign">
-                <p>社交账号登录</p>
+                <p>社交账号直接注册</p>
                 <ul>
                     <li>
                         <nuxt-link to="/">

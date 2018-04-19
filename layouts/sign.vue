@@ -74,6 +74,10 @@
         position:relative;
         width:100%;
     }
+    .sign .main form .input-password {
+        border-bottom:1px solid #c8c8c8;
+        border-radius: 0 0 2px 2px;
+    }
     .sign .main form .input-prepend input {
         width:100%;
         height:50px;
