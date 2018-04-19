@@ -79,14 +79,14 @@
         height:50px;
         padding:4px 12px 4px 30px;
         border:1px solid #c8c8c8;
-        border-radius: 2px;
         background-color:rgb(248,248,248);
-    }
-    .sign .main form .input-prepend:nth-of-type(1) input {
         border-bottom:0;
+    }
+    .sign .main form .input-prepend:first-of-type input {
         border-radius:2px 2px 0 0;
     }
-    .sign .main form .input-prepend:nth-of-type(2) input {
+    .sign .main form .input-prepend:last-of-type input {
+        border-bottom:1px solid #c8c8c8;
         border-radius: 0 0 2px 2px;
     }
     .sign .main form .input-prepend i {
@@ -111,18 +111,51 @@
     .sign .main form button {
         width:100%;
         padding:9px 18px;
+        margin-top:20px;
         text-align:center;
         color:#fff;
-        background:#3194D0;
         border-radius:25px;
         font-size:18px;
         border:none;
         outline: none;
+        display:block;
         clear:both;
     }
-    .sign .main form button:hover {
+    .sign .main form button.sign-in-btn {
+        background:#3194D0;
+    }
+    .sign .main form button.sign-up-btn {
+        background:rgb(66,192,46);
+    }
+    .sign .main form button.sign-in-btn:hover {
         background:#187cb7;
         cursor: pointer;
+    }
+    .sign .main form button.sign-up-btn:hover {
+        background:#3db922;
+    }
+    .sign .main form p.sign-up-msg {
+        font-size:12px;
+        margin:15px 0;
+        text-align:center;
+        line-height:20px;
+        color:#969696;
+    }
+    .sign .main form ssm {
+        position:relative;
+        line-height: 36px;
+    }
+    .sign .main form .send-ssm {
+        position:absolute;
+        right:10px;
+        top:10px;
+        width:100px;
+        height:36px;
+        line-height:36px;
+        border-radius: 20px;
+        color:#fff;
+        background:#3db922;
+        text-align:center;
     }
     .sign .main .more-sign p {
         position:relative;
@@ -185,6 +218,9 @@
         }
         .sign {
             background:#fff;
+        }
+        .sign:before {
+            height:0;
         }
     }
 </style>
