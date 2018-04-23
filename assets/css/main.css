@@ -14,6 +14,7 @@ html,body {
 }
 body {
     overflow-x: hidden;
+    width: 100%;
 }
 #__nuxt {
     height:100%;
@@ -55,6 +56,32 @@ a:hover {
     text-decoration: none;
 }
 
+/* 首页样式 */
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container::after{
+    clear: both;
+}
+
+@media(min-width:992px){
+    .container{
+        width:960px;
+    }
+}
+
+@media(max-width:1040px){
+    .container{
+        width: 720px;
+    }
+}
+#default-template{
+    width: 100%
+}
 
 
 
