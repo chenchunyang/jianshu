@@ -9,6 +9,7 @@ export default {
 }
 </script>
 <style>
+  
   body {
     padding-top:56px;
     /* min-width:768px; */

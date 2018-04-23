@@ -55,7 +55,8 @@
                 <!--右上角，登录和注册-->
                 <!--导航部分-->
                 <div class="container">
-                  <div class="nav-menu" >
+                    <div class="row">
+                               <div class="nav-menu" >
                        
                           <i class="fa fa-bars" @click="navShow=!navShow" style="border:1px solid #eee"></i>
                        
@@ -118,6 +119,7 @@
                           </form>
                         </li>
                     </ul>
+                    </div>
                 </div>
             </div>
         </nav>
