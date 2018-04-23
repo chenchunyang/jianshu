@@ -1,4 +1,4 @@
-// 同步测试123789
+// 同步
 <template>
     <div>
         <nav class="navbar navbar-fixed-top">
