@@ -52,3 +52,109 @@
     border-top: 1px solid #f0f0f0;
     margin-top: 10px
 }
+
+.note-list li{
+    width: 100%;
+    padding: 0 0 17px;
+    margin: 0 0 17px;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+}
+.note-list li .wrap-img{
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -60px;
+}
+.note-list li .wrap-img img{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.note-list .have-img>div{
+    padding-right: 160px
+}
+
+.note-list .author{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.note-list .author avatar{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.avatar img{
+    max-width: 100%;
+    height: auto;
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+.note-list .author .info{
+    display: inline-block;
+    vertical-align: middle;
+}
+.note-list .author .time{
+    color: #969696;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.note-list .author .nickname{
+    vertical-align: middle;
+}
+.note-list .title{
+    margin: 7px 0 4px;
+    font-size: 18px;
+    line-height:1.5 ;
+    font-weight: 700;
+}
+.note-list .title:hover{
+    text-decoration: underline;
+}
+.note-list .abstract{
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 24px;
+}
+.note-list .meta{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.note-list .meta .collection-tag{
+    max-width: 200px;
+    display: inline-block;
+    padding:  0 5px;
+    color: #ea6f5a;
+    border: 1px solid #ea6f5a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right:  10px ;
+    vertical-align: middle;
+    border-radius: 3px;
+    transition: all .1 ease-in
+}
+.note-list .meta .collection-tag:hover{
+    color: #ec6149 !important;
+    background-color: rgba(236,97,73,.05);
+    border-color: #ec6149;
+}
+.note-list .meta a{
+    color: #b4b4b4;
+    transition: .1s ease-in;
+    margin-right: 10px;
+}
+note-list .meta a:hover{
+    color: #787878;
+}
+note-list .meta span{
+    color: #b4b4b4;
+}
