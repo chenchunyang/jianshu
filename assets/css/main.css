@@ -14,7 +14,6 @@ html,body {
 }
 body {
     overflow-x: hidden;
-    width: 100%;
 }
 #__nuxt {
     height:100%;
@@ -30,7 +29,11 @@ body {
 }
 ul,ol,dl {
     list-style: none;
+    margin:0;
     padding:0;
+}
+li {
+    line-height:20px;
 }
 input,input:hover,input:active,input:focus {
     outline: none;
@@ -55,61 +58,30 @@ a:hover {
     color:#333;
     text-decoration: none;
 }
-
-/* 首页样式 */
-
-.container{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+/*************************************首页样式******************************************/
+.container {
+    padding-left:15px;
+    padding-right:15px;
+    margin-left:auto;
+    margin-right:auto;
 }
-.container::after{
-    clear: both;
+.container:after {
+    content:'';
+    clear:both;
+    display:table;
 }
-
-/* @media(min-width:992px){
-    .container{
+/*大于992px*/
+@media (min-width:992px) {
+    .container {
         width:960px;
     }
 }
-
-@media(max-width:1040px){
-    .container{
-        width: 720px;
-    }
-} */
-#default-template{
-    width: 100%
-}
-
-
-/* 大于768px */
-@media (max-width: 1080px) {
+/*小于1080px*/
+@media (max-width:1080px) {
     .container {
-        width:750px
+        width:750px;
     }
 }
-
-/* 大于992px */
-@media (min-width: 992px) {
-    .container {
-        width:960px
-    }
-}
-
-/* @media (min-width: 1081px) {
-    .container {
-        width:960px
-    }
-} */
-
-
-
-
-
-
-
 .row {
     margin-left: -15px;
     margin-right: -15px
@@ -1736,6 +1708,8 @@ a:hover {
         margin-left: 100%
     }
 }
+
+
 
 
 

@@ -7,23 +7,23 @@
                     <!--热门专题-->
                     <div class="recommend-collection">
                         <nuxt-link class="collection" to="/collection/123">
-                            <img src="~/assets/img/c1.jpg">
+                            <img src="~/assets/img/c_1.jpg">
                             <span name="name">故事</span>
                         </nuxt-link>
                         <nuxt-link class="collection" to="/collection/123">
-                            <img src="~/assets/img/c2.jpg">
+                            <img src="~/assets/img/c_2.jpg">
                             <span name="name">摄影</span>
                         </nuxt-link>
                         <nuxt-link class="collection" to="/collection/123">
-                            <img src="~/assets/img/c3.jpg">
+                            <img src="~/assets/img/c_3.jpg">
                             <span name="name">人文社科</span>
                         </nuxt-link>
                         <nuxt-link class="collection" to="/collection/123">
-                            <img src="~/assets/img/c4.jpg">
+                            <img src="~/assets/img/c_4.jpg">
                             <span name="name">历史</span>
                         </nuxt-link>
                         <nuxt-link class="collection" to="/collection/123">
-                            <img src="~/assets/img/c5.jpg">
+                            <img src="~/assets/img/c_5.jpg">
                             <span name="name">读书</span>
                         </nuxt-link>
                         <nuxt-link class="more-collection" to="/collection/123">
@@ -37,7 +37,7 @@
                         <ul class="note-list">
                             <li class="have-img">
                                 <nuxt-link to="/p/123" class="wrap-img">
-                                    <img src="~/assets/img/b.jpg">
+                                    <img src="~/assets/img/note.jpg">
                                 </nuxt-link>
                                 <div class="content">
                                     <div class="author">
@@ -108,7 +108,7 @@
                             </li>
                             <li class="have-img">
                                 <nuxt-link to="/p/123" class="wrap-img">
-                                    <img src="~/assets/img/b.jpg">
+                                    <img src="~/assets/img/note.jpg">
                                 </nuxt-link>
                                 <div class="content">
                                     <div class="author">
@@ -196,32 +196,28 @@
                             <nuxt-link to="/">
                                 <img src="~/assets/img/ad3.png">
                             </nuxt-link>
-                            <nuxt-link to="/">
+                            <nuxt-lnk to="/">
                                 <img src="~/assets/img/ad4.png">
-                            </nuxt-link>
+                            </nuxt-lnk>
                         </div>
                         <!--推荐作者-->
                         <div class="recommended-author">
                             <div class="title">
                                 <span>推荐作者</span>
-                                <span class="page-change" to="/" @click="change()">
-                                <!-- <span class="page-change" to="/" @click="f=false"> -->
-                                    <i class="fa fa-refresh" id="refresh"></i>
+                                <nuxt-link class="page-change" to="/">
+                                    <i class="fa fa-refresh"></i>
                                     换一批
-                                </span>
+                                </nuxt-link>
                             </div>
                             <ul class="recommended-list">
                                 <li>
                                     <nuxt-link class="avatar" to="/u/123">
                                         <img src="~/assets/img/default-avatar.jpg">
                                     </nuxt-link>
-                                    <!-- <a href="#" class="follow" @click="c()" @mouseover="d()" >
-                                        <i class="fa fa-plus">关注</i>
-                                    </a> -->
-                                    <a href="#" :class="[a?'follow':'follow-a']"  @click="a=!a;b=true"  @mouseenter="a?'':b=false"  @mouseleave="a?'':b=true">
-                                            <i :class="[a?'fa fa-plus':b?'fa fa-check':'fa fa-close']"></i>
-                                    {{a?"关注":b?"已关注":"取消关注"}}
-                                </a>
+                                    <a href="#" class="follow">
+                                        <i class="fa fa-plus"></i>
+                                        关注
+                                    </a>
                                     <nuxt-link to="/u/123" class="name">
                                         简书用户
                                     </nuxt-link>
@@ -233,10 +229,10 @@
                                     <nuxt-link class="avatar" to="/u/123">
                                         <img src="~/assets/img/default-avatar.jpg">
                                     </nuxt-link>
-                                    <a href="#" :class="[c?'follow':'follow-a']"  @click="c=!c;d=true"  @mouseenter="c?'':d=false"  @mouseleave="c?'':d=true">
-                                            <i :class="[c?'fa fa-plus':d?'fa fa-check':'fa fa-close']"></i>
-                                    {{c?"关注":d?"已关注":"取消关注"}}
-                                </a>
+                                    <a href="#" class="follow">
+                                        <i class="fa fa-plus"></i>
+                                        关注
+                                    </a>
                                     <nuxt-link to="/u/123" class="name">
                                         简书用户
                                     </nuxt-link>
@@ -248,10 +244,10 @@
                                     <nuxt-link class="avatar" to="/u/123">
                                         <img src="~/assets/img/default-avatar.jpg">
                                     </nuxt-link>
-                                   <a href="#" :class="[a?'follow':'follow-a']"  @click="a=!a;b=true"  @mouseenter="a?'':b=false"  @mouseleave="a?'':b=true">
-                                            <i :class="[a?'fa fa-plus':b?'fa fa-check':'fa fa-close']"></i>
-                                    {{a?"关注":b?"已关注":"取消关注"}}
-                                </a>
+                                    <a href="#" class="follow">
+                                        <i class="fa fa-plus"></i>
+                                        关注
+                                    </a>
                                     <nuxt-link to="/u/123" class="name">
                                         简书用户
                                     </nuxt-link>
@@ -263,10 +259,10 @@
                                     <nuxt-link class="avatar" to="/u/123">
                                         <img src="~/assets/img/default-avatar.jpg">
                                     </nuxt-link>
-                                    <a href="#" :class="[a?'follow':'follow-a']"  @click="a=!a;b=true"  @mouseenter="a?'':b=false"  @mouseleave="a?'':b=true">
-                                            <i :class="[a?'fa fa-plus':b?'fa fa-check':'fa fa-close']"></i>
-                                    {{a?"关注":b?"已关注":"取消关注"}}
-                                </a>
+                                    <a href="#" class="follow">
+                                        <i class="fa fa-plus"></i>
+                                        关注
+                                    </a>
                                     <nuxt-link to="/u/123" class="name">
                                         简书用户
                                     </nuxt-link>
@@ -278,10 +274,10 @@
                                     <nuxt-link class="avatar" to="/u/123">
                                         <img src="~/assets/img/default-avatar.jpg">
                                     </nuxt-link>
-                                    <a href="#" :class="[a?'follow':'follow-a']"  @click="a=!a;b=true"  @mouseenter="a?'':b=false"  @mouseleave="a?'':b=true">
-                                            <i :class="[a?'fa fa-plus':b?'fa fa-check':'fa fa-close']"></i>
-                                    {{a?"关注":b?"已关注":"取消关注"}}
-                                </a>
+                                    <a href="#" class="follow">
+                                        <i class="fa fa-plus"></i>
+                                        关注
+                                    </a>
                                     <nuxt-link to="/u/123" class="name">
                                         简书用户
                                     </nuxt-link>
@@ -302,73 +298,24 @@
     </div>
 </template>
 <script>
-import myHeader from "../components/myHeader";
-export default {
-  head: {
-    title: "简书-创作你的创作",
-    meta: [
-      { charset: "utf-8" },
-      { name: "keywords", content: "简书首页" },
-      { name: "description", content: "简书首页" },
-      { name: "author", content: "李志远" }
-    ]
-  },
-  components: {
-    myHeader
-  },
-    data: function () {
-        return {
-            name: "首页",
-            curren_rotate: "0",
-            a:true,
-            b:true,
-            c:true,
-            d:true,
-            // f:false
-        };
-    },
-  methods:{
-      change:function(){
-          console.log('1111111')
-          var i =document.getElementById('refresh')
-          console.log(i)
-          i.style.transform="rotate("+(this.curren_rotate+360)+"deg)"
-
-          this.curren_rotate = parseInt(this.curren_rotate+360)
-          console.log( this.curren_rotate)
-
-      },
-    //   c:function () {
-
-
-    //       var t = document.getElementsByClassName('fa fa-plus')
-    //       console.log(t)
-    //       t[0].textContent = "已关注"
-    //       t[0].style.color = "gray"
-    //       t[0].className="fa fa-check"
-    //       this.curren_rotate++
-    //       console.log(this.curren_rotate)
-
-    //     //   if(this.curren_rotate == -1){
-    //     //       t[0].textContent = "关注"
-    //     //         t[0].style.color = "gray"
-    //     //         t[0].className="fa fa-plus"
-    //     //   }
-    //   },
-    //   d:function(){
-    //       if(this.curren_rotate != 0){
-    //           var t = document.getElementsByClassName('fa fa-check')
-    //           console.log(t)
-    //             t[0].textContent = "取消关注"
-    //             t[0].style.color = "gray"
-    //             t[0].className = "fa fa-times"
-    //       }
-    //       this.curren_rotate = -1
-    //   }
-    
-  }
-};
+    import myHeader from  '../components/myHeader'
+    export default {
+        head:{
+            title:'简书-创作你的创作',
+            meta:[
+                {charset:'utf-8'},
+                {name:'keywords',content:'简书首页'},
+                {name:'description',content:'简书首页'},
+                {name:'author',content:'李志远'}
+            ]
+        },
+        components:{
+            myHeader
+        },
+        data () {
+            return {
+                name:'首页'
+            }
+        }
+    }
 </script>
-<style>
-
-</style>
