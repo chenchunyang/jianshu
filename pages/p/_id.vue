@@ -92,9 +92,38 @@
                         <a href="javascript:void(0)" class="share-btn" v-tooltip="'分享到微信'">
                             <i class="fa fa-weixin weixin"></i>
                         </a>
-                        <a href="javascript:void(0)" class="share-btn more-share">
-                            更多分享
-                        </a>
+                        <v-popover  offset="-0.5">
+                                 <a href="javascript:void(0)" class="share-btn more-share" >
+                                        更多分享
+                                </a>
+                                <template slot="popover">
+                                    <div>
+                                        <a class="fa fa-qq" id="qq"></a>
+                                        <span class="share">分享到QQ空间</span>
+                                    </div>
+                                    <div>
+                                        <a class="fa fa-twitter-square " id="twitter"></a>
+                                        <span class="share">分享到Twitter</span>
+                                    </div>
+                                    <div>
+                                        <a class=" fa fa-facebook-square " id="facebook"></a>
+                                    <span class="share" >分享到Facebook</span>
+                                    </div>
+                                    <div class="google">
+                                        <a class="fa fa-google-plus " id="google"></a>
+                                        <span>分享到Google+</span>
+                                    </div>
+                                    <div class="firefox">
+                                        <a class="fa fa-github" id="firefox"></a>
+                                        <span>分享到Github</span>
+                                    </div>
+                                    
+                                    
+                                     
+                                    
+                                </template>
+                        </v-popover>
+                       
                     </div>
                 </div>
                 <!--留言组件-->
@@ -105,22 +134,24 @@
 </template>
 
 <script>
+// import Vue from  Vue
+// Vue.component('share',{
+//     template:`<div></div>`
+// })
+import myComment from "~/components/myComment";
+import myHeader from "~/components/myHeader";
 
-    import myComment from '~/components/myComment'
-    import myHeader from  '~/components/myHeader'
-
-
-    export default {
-        data () {
-            return {
-                name:'page',
-                likeActive:'false'
-            }
-        },
-        components:{
-            myHeader,
-            myComment
-        }
-    }
+export default {
+  data() {
+    return {
+      name: "page",
+      likeActive: "false"
+    };
+  },
+  components: {
+    myHeader,
+    myComment
+  }
+};
 </script>
 

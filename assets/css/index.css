@@ -471,29 +471,38 @@ i.qq {
     }
 
 }
+.v-popover{
+    display:inline-block;
+   
+}
+/* .wrapper{
+    background-color:white!important;
+} */
+.wrapper .tooltip-inner .google span{
+    margin-left:7px;
+}
+.wrapper .tooltip-inner .firefox span{
+    margin-left:13px;
+}
+.wrapper .tooltip-inner>div>div:hover{
+   background:blue
+}
+.share{
+    margin-left:1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#twitter{
+   color:#00AAEC;
+}
+#facebook{
+    color:#4460A0;
+}
+#qq{
+    color:#333;
+}
+#google{
+    color:#FA3F2D;
+}
+/* #firefox{
+    color:#FFE744;
+} */
