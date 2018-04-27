@@ -74,25 +74,25 @@
                 </div>
                 <!--更多分享-->
                 <div class="meta-bottom">
-                    <div class="like">
-                        <div class="like-btn">
-                            <a href="#">喜欢</a>
+                    <div class="like" :class="{'likeActive':likeActive}" @click="likeActive=!likeActive">
+                        <div class="like-btn" >
+                            <a >喜欢</a>
                         </div>
                         <div class="like-num">
-                            <a href="#">50</a>
+                            <a>50</a>
                         </div>
                     </div>
                     <div class="share">
-                        <a href="#" class="share-btn">
+                        <a href="javascript:void(0)" class="share-btn" v-tooltip="'分享到qq'">
                             <i class="fa fa-qq qq"></i>
                         </a>
-                        <a href="#" class="share-btn">
+                        <a href="javascript:void(0)" class="share-btn" v-tooltip="'分享到微博'">
                             <i class="fa fa-weibo weibo"></i>
                         </a>
-                        <a href="#" class="share-btn">
+                        <a href="javascript:void(0)" class="share-btn" v-tooltip="'分享到微信'">
                             <i class="fa fa-weixin weixin"></i>
                         </a>
-                        <a href="#" class="share-btn more-share">
+                        <a href="javascript:void(0)" class="share-btn more-share">
                             更多分享
                         </a>
                     </div>
@@ -103,13 +103,18 @@
         </div>
     </div>
 </template>
+
 <script>
+
     import myComment from '~/components/myComment'
     import myHeader from  '~/components/myHeader'
+
+
     export default {
         data () {
             return {
-                name:'page'
+                name:'page',
+                likeActive:'false'
             }
         },
         components:{
@@ -118,3 +123,4 @@
         }
     }
 </script>
+

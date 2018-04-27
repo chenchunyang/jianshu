@@ -18,6 +18,7 @@
     height:34px;
     overflow:hidden;
     vertical-align: top;
+    
 }
 .index .main .recommend-collection a.collection img {
     display:inline-block;
@@ -446,6 +447,29 @@ i.qq {
     border-radius: 40px;
     text-align:center;
     color:#9b9b9b;
+}
+
+ .likeActive{
+    background: #EA6F5A!important;
+}
+.likeActive  a{
+    color: #fff!important;
+}
+
+.like  .like-num{
+    border-left: 1px solid #fff!important;
+}
+.likeActive  .like-btn:before{
+    animation: changeLike .6s steps(19) forwards;
+}
+@keyframes changeLike {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+
 }
 
 

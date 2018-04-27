@@ -11,8 +11,9 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
   },
+    plugins:[{src:'~/plugins/myPlugins.js',ssr:false}],
   /*
   ** Global CSS
   */
